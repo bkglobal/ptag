@@ -1,9 +1,9 @@
-name: prod-sample
+name: Testing_Untagged
 
 # Controls when the action will run. 
 on:
   push:
-    tags:
+    tags-ignore:
       - prod-v*
   # Triggers the workflow on push or pull request events but only for the main branch
   create:
@@ -21,4 +21,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world From Production
+        run: echo Hello, world From Testing Untagged
