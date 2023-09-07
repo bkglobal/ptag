@@ -1,7 +1,8 @@
 name: Production_Tagged
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
+  # This will push on the tagged buld with prod-v initials.
   push:
     tags:
       - prod-v*
